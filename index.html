@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div id="word"></div>
+
+    <div class="wrapper">
+        <div class="range">
+            <input type="range" min="1" max="1000" value="0" step=".01" class="slider" id="slider">
+        </div>
+
+        <div class="settings">
+            <input type="text" id="letters" onfocusout="game.onfocusout(event)" onkeydown="game.onkeydown(event)" onchange="game.onchange()" value="tn">
+            <input type="number" id="length" onchange="game.onchange()" value="2" min="2" max="5" placeholder="length">
+        </div>
+        <span id="error">Please use a minimum of 2 characters</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <script src="keyboard.js"></script>
+</body>
+
+</html>
