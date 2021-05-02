@@ -103,3 +103,10 @@ input[type="range"] {
     display: none;
     color: #ffb700;
 }
+
+.feedback {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #5c5c5c;
+}

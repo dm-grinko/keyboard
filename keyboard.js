@@ -87,7 +87,6 @@ class Game {
     };
 
     moveSlider(action) {
-        // input type slider
         this.step = action && this.step !== 1000 ? this.step + 10 : 0;
         const max = this.step;
 
