@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
     background-color: #333;
-    color: #04aa6d;
+    color: #9faa04;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+}
+
+body.active {
+    color: #04aa6d;
+}
+
+body.active .slider::-webkit-slider-thumb {
+    background: #04aa6d;
+}
+
+body.active .slider::-moz-range-thumb {
+    background: #04aa6d;
+}
+
+body.active .settings input {
+    color: #04aa6d;
 }
 
 #word,
@@ -16,7 +32,7 @@ body {
 
 #time {
     font-size: 30px;
-    color: yellow;
+    color: #9faa04;
 }
 
 .range {
@@ -50,14 +66,14 @@ body {
     appearance: none;
     width: 10px;
     height: 10px;
-    background: #04aa6d;
+    background: #9faa04;
     cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
     width: 10px;
     height: 10px;
-    background: #04aa6d;
+    background: #9faa04;
 }
 
 .settings {
@@ -77,7 +93,7 @@ body {
     height: 50px;
     background: #333333;
     border: 1px solid #5c5c5c;
-    color: #04aa6d;
+    color: #9faa04;
     font-size: 20px;
 }
 
@@ -109,4 +125,8 @@ input[type="range"] {
     text-decoration: none;
     text-align: center;
     color: #5c5c5c;
+}
+
+.analytics {
+    margin-bottom: 100px;
 }
